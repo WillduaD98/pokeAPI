@@ -1,8 +1,7 @@
-import { Router } from "express";
+import  Router  from "express";
+import { getPokemon } from "../../controllers/pokemon-controller.js";
 const router = Router();
 
-//import pokemonService from ''path''
-
-router.get('/');
+router.get('/:id',getPokemon);
 
 export default router;
